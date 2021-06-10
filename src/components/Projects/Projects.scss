@@ -1,0 +1,65 @@
+@import "../../variables.scss";
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 250px;
+  width: 100vw;
+  overflow: hidden;
+
+  .projects__title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+    width: 90vw;
+
+    span {
+      color: $purple;
+      margin: 0 10px;
+    }
+
+    div {
+      height: 2px;
+      width: 20vw;
+      background: $purple;
+    }
+  }
+
+  .project__splash,
+  .project__splash2,
+  .project__splash4,
+  .project__splash5 {
+    height: 300px;
+    position: absolute;
+  }
+
+  .project__splash {
+    top: 100px;
+    left: 0;
+  }
+  .project__splash2 {
+    top: 30vh;
+    right: 0;
+  }
+
+  .project__splash4 {
+    top: 100vh;
+    left: 0;
+  }
+
+  .project__splash5 {
+    height: 200px;
+    top: 150vh;
+    right: 0;
+  }
+
+  .project__splash3 {
+    position: absolute;
+    z-index: -1;
+    height: 30vh;
+    top: 45%;
+  }
+}

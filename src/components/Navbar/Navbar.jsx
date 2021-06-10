@@ -7,9 +7,9 @@ function Navbar() {
         <div className="navbar">
         <div></div>
             <ul className="navbar__links">
-                <li>PROJECTS</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
             </ul>
             
         </div>
