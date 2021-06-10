@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: $navFont;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+
+  .navbar__logo {
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  .navbar__links {
+    display: flex;
+
+    li {
+      list-style: none;
+      margin: 0 20px;
+
+      & :hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

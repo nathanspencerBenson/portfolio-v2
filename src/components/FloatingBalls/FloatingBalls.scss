@@ -1,0 +1,104 @@
+@import "../../variables.scss";
+
+.floatingBalls {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: contain;
+  position: absolute;
+  z-index: -2;
+  .pink {
+    background-color: $pink;
+  }
+  .blue {
+    background-color: $blue;
+  }
+  .yellow {
+    background-color: $yellow;
+  }
+  .green {
+    background-color: $green;
+  }
+  .purple {
+    background-color: $purple;
+  }
+  .ball {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+}
+
+// animations
+
+.floating1 {
+  animation-name: floating1;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.floating2 {
+  animation-name: floating2;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.floating3 {
+  animation-name: floating3;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.floating4 {
+  animation-name: floating4;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating1 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(250px, 250px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+@keyframes floating2 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(-250px, -250px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+@keyframes floating3 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(400px, 100px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+@keyframes floating4 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(-400px, -100px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
