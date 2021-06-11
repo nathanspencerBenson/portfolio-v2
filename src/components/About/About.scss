@@ -1,0 +1,64 @@
+@import "../../variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  padding: 0 10vw;
+  .about__title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90vw;
+    margin-bottom: 100px;
+    font-family: "Patua One", cursive;
+
+    span {
+      color: $purple;
+      margin: 0 10px;
+    }
+
+    div {
+      height: 2px;
+      width: 20vw;
+      background: $purple;
+    }
+  }
+
+  .about__main {
+    display: flex;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+    }
+    img {
+      height: 20vw;
+    }
+  }
+  .about__opportunities {
+    font-family: "Patua One", cursive;
+    text-align: center;
+    h1 {
+      font-size: 5em;
+      line-height: 0.8;
+
+      padding-bottom: 20px;
+      background: -webkit-linear-gradient(#ee0b77, #fd6a04);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      font-size: 2em;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      border-bottom: 2px solid $purple;
+    }
+  }
+}
