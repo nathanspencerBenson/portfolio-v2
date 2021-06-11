@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.skills {
+  .skills__title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90vw;
+
+    span {
+      color: $purple;
+      margin: 0 10px;
+    }
+
+    div {
+      height: 2px;
+      width: 20vw;
+      background: $purple;
+    }
+  }
+
+  .skills__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 0;
+  }
+}
