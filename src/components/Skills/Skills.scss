@@ -1,6 +1,11 @@
 @import "../../variables.scss";
 
 .skills {
+  position: relative;
+  img {
+    height: 50vh;
+    z-index: -3;
+  }
   .skills__title {
     display: flex;
     align-items: center;
@@ -22,6 +27,6 @@
   .skills__container {
     display: flex;
     justify-content: space-evenly;
-    padding: 150px 0;
+    flex-wrap: wrap;
   }
 }

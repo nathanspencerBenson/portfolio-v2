@@ -5,7 +5,7 @@ import { FaHtml5, FaCss3Alt, FaSass, FaReact} from 'react-icons/fa';
 
 import { motion } from "framer-motion";
 
-function SkillsIcon({ icon, text}) {
+function SkillsIcon({ icon, text, textColor}) {
     return (
         <div className="skill-container">
                     <motion.div
@@ -15,7 +15,7 @@ function SkillsIcon({ icon, text}) {
                         }}
                     >{icon}
                     </motion.div>
-                    <span>{text}</span>
+                    <span style={{color: textColor}}>{text}</span>
                 </div>
     )
 }

@@ -3,6 +3,7 @@
   .icon {
     height: 50px;
     width: 50px;
+    margin: 20px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
@@ -16,9 +17,10 @@
   span {
     position: absolute;
     z-index: -2;
-    bottom: 10px;
+    bottom: 25px;
     font-size: 0.8em;
     width: 100%;
     text-align: center;
+    font-weight: bold;
   }
 }
