@@ -1,9 +1,10 @@
 @import "../../variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 
 .skills {
   position: relative;
   img {
-    height: 50vh;
+    height: 30vh;
     z-index: -3;
   }
   .skills__title {
@@ -11,6 +12,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 90vw;
+    font-family: "Patua One", cursive;
 
     span {
       color: $purple;
@@ -25,8 +27,9 @@
   }
 
   .skills__container {
+    margin-top: 75px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }

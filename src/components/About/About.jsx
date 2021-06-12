@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.scss';
+import { motion } from 'framer-motion';
 
 function About() {
     return (
@@ -20,7 +21,12 @@ function About() {
             <div className="about__opportunities">
                 <h1>I occasionally take on <br /> freelance opportunities.</h1>
                 <p>Have an exciting project where you need some help? <br />
-                    Send me over a message, and <a href="#">let's chat</a>.</p>
+                    Send me over a message, and &nbsp; 
+                     <motion.a href="#" whileHover={{
+                            color: '#b23bff',
+
+                        }}>let's chat</motion.a>.
+                </p>
             </div>
             
         </div>

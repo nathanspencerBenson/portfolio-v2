@@ -1,0 +1,78 @@
+@import "../../variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+.contact {
+  margin-top: 250px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .contact__title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90vw;
+    font-family: "Patua One", cursive;
+
+    span {
+      color: $purple;
+      margin: 0 10px;
+    }
+
+    div {
+      height: 2px;
+      width: 20vw;
+      background: $purple;
+    }
+  }
+
+  p {
+    font-family: "Patua One", cursive;
+    font-size: 1.5em;
+  }
+
+  .contact__container {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+
+    img {
+      height: 30vh;
+      margin-right: 5%;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      input {
+        border: 2px solid #b13bff70;
+        background: none;
+        margin-bottom: 5px;
+        height: 2em;
+        font-size: 1em;
+        padding: 5px 10px;
+      }
+
+      textarea {
+        border: 2px solid #b13bff70;
+        background: none;
+        font-size: 1.3m;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+      }
+
+      button {
+        align-self: flex-end;
+        width: 40%;
+        font-size: 1.2em;
+        background-color: white;
+        color: $purple;
+        font-weight: bold;
+        border: 2px solid $purple;
+        padding: 10px 0;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
