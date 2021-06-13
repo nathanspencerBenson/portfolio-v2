@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.scss';
 
 import emailjs from 'emailjs-com';
@@ -7,6 +7,9 @@ import mailImage from '../../assets/mail.svg';
 import { motion } from 'framer-motion';
 
 function Contact() {
+    const [ formSubmitted, setFormSubmitted ] = useState(false);
+    const [ message, setMessage] = useState('');
+    const [ result, setResult ] = useState('');
 
     const serviceID = process.env.REACT_APP_SERVICE_ID;
     const templateID = process.env.REACT_APP_TEMPLATE_ID;
@@ -17,8 +20,18 @@ function Contact() {
         emailjs.sendForm(serviceID, templateID, e.target, userID)
           .then((result) => {
               console.log(result.text);
+              setMessage('Your message was sent successfully. Thanks.');
+              setFormSubmitted(true);
+              setResult('success');
+
+
           }, (error) => {
               console.log(error.text);
+              setFormSubmitted(true);
+              setMessage('There was an error. Try again later.');
+              setResult('failure');
+              
+
           });
           e.target.reset();
       }
@@ -43,6 +56,9 @@ function Contact() {
                     </motion.button>
                 </form>
             </div>
+            {formSubmitted ? (
+            <div className={result}>{message} </div>
+            ) : null}
         </div>
     )
 }
