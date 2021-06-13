@@ -1,10 +1,28 @@
 import React from 'react';
 import './Contact.scss';
 
+import emailjs from 'emailjs-com';
+
 import mailImage from '../../assets/mail.svg';
 import { motion } from 'framer-motion';
 
 function Contact() {
+
+    const serviceID = process.env.REACT_APP_SERVICE_ID;
+    const templateID = process.env.REACT_APP_TEMPLATE_ID;
+    const userID = process.env.REACT_APP_USER_ID;
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm(serviceID, templateID, e.target, userID)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+      }
+
     return (
         <div className="contact">
             <h1 className="contact__title"><div></div><span>Get</span> In Touch</h1>
@@ -12,10 +30,10 @@ function Contact() {
             <p>Have a question or want to work together?</p>
             <div className="contact__container">
                 <img src={mailImage} />
-                <form>
-                    <input type="text" placeholder="Your name" name="name"   />
-                    <input type="email" placeholder="Enter email" name="email" required/>
-                    <textarea  rows="15" cols="60"/>
+                <form onSubmit={sendEmail}>
+                    <input type="text" placeholder="Your name" name="user_name"   />
+                    <input type="email" placeholder="Enter email" name="user_email" required/>
+                    <textarea name="message" rows="15" cols="60"/>
                     <motion.button whileHover={{
                             backgroundColor: '#b23bff',
                             color: 'white'

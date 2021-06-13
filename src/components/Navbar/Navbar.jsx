@@ -1,11 +1,12 @@
 import React from 'react';
 import './Navbar.scss';
-import bird from '../../assets/bird.svg'
+
+
+import { motion } from 'framer-motion';
 
 function Navbar() {
     return (
         <div className="navbar">
-        <div></div>
             <ul className="navbar__links">
                 <li><a href="">PROJECTS</a></li>
                 <li><a href="">ABOUT</a></li>

@@ -2,6 +2,7 @@
 import './App.scss';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import Landingpage from './components/Landingpage/Landingpage';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
@@ -16,6 +17,7 @@ function App() {
      <Skills />
      <About />
      <Contact />
+     <Footer />
     </div>
   );
 }

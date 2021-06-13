@@ -1,20 +1,17 @@
 @import "../../variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 
 .navbar {
+  height: 10vh;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-family: $navFont;
   position: sticky;
   top: 0;
-  padding: 10px;
+  padding: 10px 0;
   background: rgba(255, 255, 255, 0.541);
-  z-index: 1000;
 
-  .navbar__logo {
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 50%;
-  }
   .navbar__links {
     display: flex;
 
