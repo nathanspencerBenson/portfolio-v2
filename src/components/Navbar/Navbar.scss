@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 
 .navbar {
-  height: 10vh;
   width: 100vw;
   display: flex;
   justify-content: flex-end;
@@ -11,6 +10,8 @@
   top: 0;
   padding: 10px 0;
   background: rgba(255, 255, 255, 0.541);
+  overflow: hidden;
+  z-index: 10000;
 
   .navbar__links {
     display: flex;

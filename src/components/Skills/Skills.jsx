@@ -22,6 +22,7 @@ function Skills() {
                 <SkillsIcon icon={<SiRedux className="icon" style={{color: '#774ABD'}} />} text={'Redux'} textColor={"#774ABD"}/>
             </div>
             
+            
         </div>
     )
 }
