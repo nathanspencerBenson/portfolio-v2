@@ -3,7 +3,7 @@ import './ProjectCard.scss';
 
 import { BsCodeSlash, BsEyeFill } from 'react-icons/bs';
 
-function ProjectCard({ flexOrder, title, tech, description, img }) {
+function ProjectCard({ flexOrder, title, tech, description, img, githubLink }) {
     return (
         <div className="projectCard">
             <div className="projectCard__left" style={{order: flexOrder}}>
@@ -15,8 +15,8 @@ function ProjectCard({ flexOrder, title, tech, description, img }) {
                 <p className="projectCard__tech">{tech}</p>
                 <p>{description}</p>
                 <div className="projectCard__buttons">  
-                    <a href="#"><button><BsEyeFill  style={{marginRight: "5px"}}/>Demo</button></a>
-                    <a href="#"><button><BsCodeSlash style={{marginRight: "5px"}} />Code</button></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><button><BsEyeFill  style={{marginRight: "5px"}}/>Demo</button></a>
+                    <a href={githubLink} target="_blank" rel="noopener noreferrer"><button><BsCodeSlash style={{marginRight: "5px"}} />Code</button></a>
                 </div>
             </div>
             
