@@ -8,9 +8,9 @@ function Navbar() {
     return (
         <div className="navbar">
             <ul className="navbar__links">
-                <li><a href="">PROJECTS</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
             
         </div>

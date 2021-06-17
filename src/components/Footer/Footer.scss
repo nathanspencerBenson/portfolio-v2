@@ -1,6 +1,15 @@
+@import "../../variables.scss";
+
 .footer {
+  display: flex;
+  flex-direction: column;
   position: relative;
   color: white;
+
+  > div {
+    height: 10vh;
+    background: $purple;
+  }
 
   p {
     position: absolute;

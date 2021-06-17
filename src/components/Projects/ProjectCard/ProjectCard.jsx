@@ -10,7 +10,7 @@ import { useAnimation } from 'framer-motion';
 
 
 
-function ProjectCard({ flexOrder, title, tech, description, img, githubLink, initialXPosition }) {
+function ProjectCard({ flexOrder, title, tech, description, img, githubLink, initialXPosition, liveVersion }) {
 
 
     const {ref, inView} = useInView();
@@ -56,7 +56,7 @@ function ProjectCard({ flexOrder, title, tech, description, img, githubLink, ini
                 <p className="projectCard__tech">{tech}</p>
                 <p>{description}</p>
                 <div className="projectCard__buttons">  
-                    <a href="#" target="_blank" rel="noopener noreferrer"><button><BsEyeFill  style={{marginRight: "5px"}}/>Demo</button></a>
+                    <a href={liveVersion} target="_blank" rel="noopener noreferrer"><button><BsEyeFill  style={{marginRight: "5px"}}/>Demo</button></a>
                     <a href={githubLink} target="_blank" rel="noopener noreferrer"><button><BsCodeSlash style={{marginRight: "5px"}} />Code</button></a>
                 </div>
             </div>

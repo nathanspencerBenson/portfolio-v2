@@ -9,14 +9,26 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    background: white;
 
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .projectCard__left {
     display: flex;
     align-items: center;
     height: 300px;
+    padding: 0 10px;
+
+    @media (max-width: 768px) {
+      order: 0 !important;
+      height: fit-content;
+      padding: 0;
+      border-radius: 15px 0 25px 25px;
+    }
 
     img {
       object-fit: contain;
@@ -29,7 +41,10 @@
       }
 
       @media (max-width: 768px) {
-        height: 250px;
+        height: 200px;
+        box-shadow: none;
+        margin: none;
+        border-radius: 25px 25px 0 0;
       }
     }
   }
@@ -52,6 +67,10 @@
       background: -webkit-linear-gradient(#ee0b77, #fd6a04);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @media (max-width: 768px) {
+        margin: 0;
+      }
     }
 
     .projectCard__tech {

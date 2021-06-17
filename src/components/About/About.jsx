@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function About() {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <h1 className="about__title"><div></div><span>About</span> Me</h1>
             <div className="about__main">
                 

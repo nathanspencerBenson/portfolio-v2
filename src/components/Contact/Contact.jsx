@@ -37,7 +37,7 @@ function Contact() {
       }
 
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <h1 className="contact__title"><div></div><span>Get</span> In Touch</h1>
 
             <p>Have a question or want to work together?</p>
