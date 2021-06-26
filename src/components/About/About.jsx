@@ -22,7 +22,7 @@ function About() {
                 <h1>I occasionally take on <br /> freelance opportunities.</h1>
                 <p>Have an exciting project where you need some help? <br />
                     Send me over a message, and &nbsp; 
-                     <motion.a href="#" whileHover={{
+                     <motion.a href="#contact" whileHover={{
                             color: '#b23bff',
 
                         }}>let's chat</motion.a>.
